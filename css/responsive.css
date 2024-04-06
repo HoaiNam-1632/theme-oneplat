@@ -1,0 +1,305 @@
+@media screen and (max-width: 1440px) {
+    /* ----- FLOW ------- */
+
+    #step-four .flow__step_content{
+        margin-top: -21px;
+    }
+
+
+    /* ----- FAQ ------- */
+    .body-faq__title {
+        margin-left: 12px;
+    }
+    .faq-list-item{
+        padding: 14px 0;
+    }
+    .faq-list-item__title {
+        font-size: 29px;
+        margin-left: 44px;
+    }
+    .faq-list-item__content {
+        margin-left: 14px;
+    }
+    .faq-btn-add{
+        margin-left: 20px;
+    }
+
+    /* ----- CONTACT ------- */
+    .contact-title {
+        margin-left: 7px;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    .flow-support-btn button {
+      width: 220px;
+    }   
+}
+
+@media screen and (max-width: 900px) {
+
+    /* ------------- HEADER--------------*/
+    .header {
+        height: auto !important;
+    }
+
+    .section-diagram {
+        display: none;
+    }
+
+    .header-menu {
+        display: none;
+    }
+    .banner-right__img img{
+        width: 100%;
+        position: relative;
+        left: 0;
+    }
+    /* ------------- BANNER --------------*/
+
+    .section-banner .inner {
+        display: block;
+    }
+
+    .banner-right__img {
+        width: 100%;
+    }
+
+    .banner-left__info h1 {
+        font-size: 20px;
+    }
+
+    .banner-left__info p {
+        font-size: 18px;
+    }
+
+    .banner-left__btn {
+        margin-left: 7%;
+    }
+
+    .banner-left__btn button{
+        font-size: 15px;
+        padding: 20px 85px;
+    }
+
+    .banner-left__btn_icon{
+        top: 21px;
+    }
+
+    .banner-left-bottom,
+    .banner-left-top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner-right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* ------------- SHIPPAI--------------*/
+
+    .body-shippai__title{
+        font-size: 24px;
+    }
+
+    /* ------------- ONEPLAT_NARA--------------*/
+
+    .oneplat_nara-box__card, 
+    .oneplat_nara-box__title,
+    .oneplat_nara__title
+    {
+        margin-left: auto;
+    }
+    .section-oneplat_nara .oneplat_nara__title h2 {
+        font-size: 40px;
+    }
+
+    .oneplat_nara-box__title h2, .oneplat_nara__img h2 {
+        font-size: 24px;
+    }
+    .section-oneplat_nara .oneplat_nara__img img {
+        width: 200px;
+    }
+
+
+    /* ------------- DIAGRAM--------------*/
+    .section-diagram__mobile{
+        display: block;
+    }
+
+    .section-diagram__mobile .container {
+        max-width: 1200px;
+        width: 90%;
+        margin: auto;
+    }
+
+    .section-diagram__mobile .inner{
+        padding: 70px 0;
+    }
+
+    .diagram__title h2 {
+        font-size: 24px;
+    }
+
+    .diagram__sub_title {
+        font-size: 22px;
+        margin: 48px auto auto auto;
+        ;
+    }
+
+    .diagram-container__step {
+        position: relative;
+        margin: 53px auto auto auto;
+        max-width: 1036px;
+        width: 80%;
+    }
+
+    .diagram-container__step .line-up {
+        position: absolute;
+        left: 83px;
+        top: 35px;
+        z-index: 1;
+    }
+
+    .diagram__step {
+        display: flex;
+        padding-bottom: 50px;
+        position: relative;
+        z-index: 2;
+        justify-content: left;
+        align-items: center;
+    }
+
+    .diagram__step_content {
+        text-align: left;
+        margin-left: 5%;
+    }
+
+    .diagram-container__step .line-up {
+        left: 31px;
+        height: 28em;
+    }
+
+    /* ------------- TAIOU--------------*/
+
+    .body-taiou__title h2{
+        font-size: 24px;
+    }
+    .body-taiou__box{
+        grid-template-columns: repeat(2 , 1fr);
+    }
+    .body-taiou__img{
+        display: block;
+    }
+
+    /* ------------- FLOW--------------*/
+
+    .body-flow__title h2 {
+        font-size: 24px;
+    }
+    .flow-support .icon-dot, .flow-support .line-up{
+        display: none;
+    } 
+    .step-title,
+    .step-sub-title {
+        font-size: 22px;
+    }
+
+    .flow-support{
+        width: 100%;
+    }
+    .step-content {
+        font-size: 18px;
+    }
+
+    .flow-support-btn button {
+      width: 150px;
+    }
+
+    .body-flow-container__support {
+        position: relative;
+    }
+
+    .flow-support-btn button{
+        font-size: 1.6rem;
+    }
+    .body-flow-container__step{
+        margin: auto;
+        margin-top: 53px;
+    }
+    .body-flow-container__step .line-up {
+        display: none;
+    }
+    .body-flow__step{
+        display: block;
+    }
+
+    .body-flow-container__support::after{
+        left: 46%;
+    }
+
+    /* ------------- FAQ--------------*/
+
+    .body-faq__title h2, .faq-list-item__title{
+        font-size: 24px;
+    }
+
+    .faq-list-item__content {
+        font-size: 14px;
+    }
+
+    .faq-btn-add{
+        margin-right: 10px;
+    }
+
+    .faq-btn-add button{
+        width: 20px;
+        height: 20px;
+    }
+    .icon-add::before{
+        height: 14px;
+    }
+    .icon-add::after{
+        width: 14px;
+    }
+    /* ------------- CONTACT --------------*/
+
+    .section-contact .inner {
+        padding: 80px 10px;
+    }
+
+    .contact-title {
+        font-size: 24px;
+    }
+
+    .contact-footer__content .label-btn {
+        font-size: 18px;
+    }
+
+    .contact-footer__btn button {
+        padding: 20px 0;
+        font-size: 18px;
+    }
+    .contact-footer__btn button::after{
+        width: 25px;
+        height: 25px;
+        top: 20px;
+    }
+    .contact-btn-icon {
+        width: 29.04px;
+        height: 29.04px;
+        top: 24%;
+        right: 20px;
+        line-height: 0;
+    }
+    
+}
