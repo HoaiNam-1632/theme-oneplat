@@ -1,26 +1,33 @@
 @media screen and (max-width: 1440px) {
     /* ----- FLOW ------- */
 
-    #step-four .flow__step_content{
-        margin-top: -21px;
+    .flow__step_content {
+        text-align: center;
+        margin-left: 0;
     }
+
+    #step-four .flow__step_content {}
 
 
     /* ----- FAQ ------- */
     .body-faq__title {
         margin-left: 12px;
     }
-    .faq-list-item{
+
+    .faq-list-item {
         padding: 14px 0;
     }
+
     .faq-list-item__title {
         font-size: 29px;
         margin-left: 44px;
     }
+
     .faq-list-item__content {
         margin-left: 14px;
     }
-    .faq-btn-add{
+
+    .faq-btn-add {
         margin-left: 20px;
     }
 
@@ -33,8 +40,8 @@
 
 @media screen and (max-width: 1200px) {
     .flow-support-btn button {
-      width: 220px;
-    }   
+        width: 220px;
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -42,6 +49,15 @@
     /* ------------- HEADER--------------*/
     .header {
         height: auto !important;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: white;
+        z-index: 98;
+    }
+
+    .header-menu__mobile {
+        display: block;
     }
 
     .section-diagram {
@@ -51,11 +67,71 @@
     .header-menu {
         display: none;
     }
-    .banner-right__img img{
-        width: 100%;
-        position: relative;
-        left: 0;
+
+    .header-logo img {
+        width: 150px;
+        height: 60px;
     }
+
+    .header-menu__mobile {
+        width: 100%;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    }
+
+    .header-menu-icon {
+        margin-top: 78px;
+        width: 100%;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    }
+
+    .list-nav ul {
+        text-align: left;
+    }
+
+    .list-nav ul li {
+        padding: 10px 0;
+    }
+
+    .list-nav ul li a {
+        color: white;
+    }
+
+    .list-nav {
+        width: 80%;
+        margin: auto;
+    }
+
+    .list-btn a {
+        border: 0;
+        padding: 10px 20px;
+        border-radius: 20px;
+        color: #D7382F;
+    }
+
+    .list-btn {
+        color: #D7382F;
+    }
+
+    .list-btn ul li {
+        padding: 15px 0;
+    }
+
+    .list-btn .btn-header-menu-spec {
+        background-color: rgb(255, 255, 255);
+        border: #D7382F 2px solid;
+        color: #D7382F;
+        padding: 10px 20px;
+    }
+
+    .list-btn .btn-header-menu {
+        background: linear-gradient(to right, rgba(234, 30, 32, 1) 0%, rgba(247, 42, 60, 1) 50%, rgba(255, 69, 55, 1) 100%);
+        color: white;
+    }
+
     /* ------------- BANNER --------------*/
 
     .section-banner .inner {
@@ -66,8 +142,46 @@
         width: 100%;
     }
 
+    .banner-left {
+        width: 100%;
+    }
+
+    .banner-right {
+        margin: auto;
+    }
+
+    .banner-right__img img {
+        width: 100%;
+        position: relative;
+        left: 0;
+    }
+
+    .label-btn__banner {
+        margin-left: 0;
+    }
+
+    .list-nav__mobile {
+        position: fixed;
+        width: 100%;
+        background-color: black;
+        height: 100%;
+        color: white;
+        z-index: 100;
+        top: 0;
+        left: 0;
+        visibility: hidden;
+        transition: all 1s;
+        margin-top: -900px;
+        overflow: scroll;
+    }
+
+    .banner-left__info {
+        text-align: center;
+    }
+
     .banner-left__info h1 {
         font-size: 20px;
+        width: auto;
     }
 
     .banner-left__info p {
@@ -75,15 +189,19 @@
     }
 
     .banner-left__btn {
-        margin-left: 7%;
+        /* margin-left: 7%; */
     }
 
-    .banner-left__btn button{
+    .banner-left__btn button {
         font-size: 15px;
-        padding: 20px 85px;
+        padding: 10px 40px;
     }
 
-    .banner-left__btn_icon{
+    .banner-left__btn button::after {
+        display: none;
+    }
+
+    .banner-left__btn_icon {
         top: 21px;
     }
 
@@ -107,32 +225,39 @@
 
     /* ------------- SHIPPAI--------------*/
 
-    .body-shippai__title{
+    .body-shippai__title {
         font-size: 24px;
+        margin-left: 0;
+    }
+
+    .grid-container {
+        gap: 30px
     }
 
     /* ------------- ONEPLAT_NARA--------------*/
 
-    .oneplat_nara-box__card, 
+    .oneplat_nara-box__card,
     .oneplat_nara-box__title,
-    .oneplat_nara__title
-    {
+    .oneplat_nara__title {
         margin-left: auto;
     }
+
     .section-oneplat_nara .oneplat_nara__title h2 {
-        font-size: 40px;
+        font-size: 25px;
     }
 
-    .oneplat_nara-box__title h2, .oneplat_nara__img h2 {
+    .oneplat_nara-box__title h2,
+    .oneplat_nara__img h2 {
         font-size: 24px;
     }
+
     .section-oneplat_nara .oneplat_nara__img img {
         width: 200px;
     }
 
 
     /* ------------- DIAGRAM--------------*/
-    .section-diagram__mobile{
+    .section-diagram__mobile {
         display: block;
     }
 
@@ -142,8 +267,8 @@
         margin: auto;
     }
 
-    .section-diagram__mobile .inner{
-        padding: 70px 0;
+    .section-diagram__mobile .inner {
+        padding-top: 70px;
     }
 
     .diagram__title h2 {
@@ -176,7 +301,6 @@
         position: relative;
         z-index: 2;
         justify-content: left;
-        align-items: center;
     }
 
     .diagram__step_content {
@@ -191,14 +315,28 @@
 
     /* ------------- TAIOU--------------*/
 
-    .body-taiou__title h2{
+    .section-taiou {
+        padding-bottom: 0;
+    }
+
+    .section-taiou .inner {
+        padding-top: 70px;
+    }
+
+    .body-taiou__title h2 {
         font-size: 24px;
     }
-    .body-taiou__box{
-        grid-template-columns: repeat(2 , 1fr);
+
+    .body-taiou__box {
+        grid-template-columns: repeat(2, 1fr);
     }
-    .body-taiou__img{
+
+    .body-taiou__img {
         display: block;
+    }
+
+    .body-taiou__img p {
+        width: auto;
     }
 
     /* ------------- FLOW--------------*/
@@ -206,50 +344,62 @@
     .body-flow__title h2 {
         font-size: 24px;
     }
-    .flow-support .icon-dot, .flow-support .line-up{
+
+    .flow-support .icon-dot,
+    .flow-support .line-up {
         display: none;
-    } 
+    }
+
     .step-title,
     .step-sub-title {
         font-size: 22px;
     }
 
-    .flow-support{
+    .flow-support {
         width: 100%;
     }
+
     .step-content {
         font-size: 18px;
-    }
-
-    .flow-support-btn button {
-      width: 150px;
     }
 
     .body-flow-container__support {
         position: relative;
     }
 
-    .flow-support-btn button{
-        font-size: 1.6rem;
+    .flow-support-btn button {
+        font-size: 1rem;
+        width: 150px;
     }
-    .body-flow-container__step{
+
+    .body-flow-container__step {
         margin: auto;
         margin-top: 53px;
     }
+
     .body-flow-container__step .line-up {
         display: none;
     }
-    .body-flow__step{
+
+    .body-flow__step {
         display: block;
     }
 
-    .body-flow-container__support::after{
+    .body-flow-container__support::after {
         left: 46%;
     }
 
     /* ------------- FAQ--------------*/
+    .section-faq {
+        padding-bottom: 0;
+    }
 
-    .body-faq__title h2, .faq-list-item__title{
+    .section-faq .wrapper {
+        margin-top: 50px;
+    }
+
+    .body-faq__title h2,
+    .faq-list-item__title {
         font-size: 24px;
     }
 
@@ -257,21 +407,32 @@
         font-size: 14px;
     }
 
-    .faq-btn-add{
+    .faq-btn-add {
         margin-right: 10px;
     }
 
-    .faq-btn-add button{
+    .faq-btn-add button {
         width: 20px;
         height: 20px;
     }
-    .icon-add::before{
+
+    .icon-add::before {
         height: 14px;
     }
-    .icon-add::after{
+
+    .icon-add::after {
         width: 14px;
     }
+
     /* ------------- CONTACT --------------*/
+
+    .section-contact {
+        padding: 50px 0 50px 0;
+    }
+
+    .section-contact .wrapper {
+        margin-top: 0;
+    }
 
     .section-contact .inner {
         padding: 80px 10px;
@@ -289,11 +450,13 @@
         padding: 20px 0;
         font-size: 18px;
     }
-    .contact-footer__btn button::after{
+
+    .contact-footer__btn button::after {
         width: 25px;
         height: 25px;
         top: 20px;
     }
+
     .contact-btn-icon {
         width: 29.04px;
         height: 29.04px;
@@ -301,5 +464,5 @@
         right: 20px;
         line-height: 0;
     }
-    
+
 }

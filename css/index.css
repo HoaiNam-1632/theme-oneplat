@@ -21,9 +21,59 @@ a {
     text-decoration: none;
 }
 
+.icon-close{
+    position: relative;
+}
+
+.toggle-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 6.667vw;
+    padding-top: 0;
+    text-align: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.toggle-nav span{
+    position: relative;
+    top: 0 !important;
+    display: block;
+    height: 2px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #f7293c;
+    border-radius: 5px;
+    opacity: 1;
+    margin: 2px 0;
+}
+.icon-close::after {
+    position: absolute;
+    content: '/';
+    color: #F7293C;
+    border-radius: 21px;
+    transform: rotate(-50deg);
+    font-size: 35px;
+    right: 30px;
+    bottom: -8px;
+}
+
+.icon-close::before {
+    position: absolute;
+    content: '/';
+    color: #F7293C;
+    font-size: 35px;
+    transform: rotate(20deg);
+    right: 30px;
+    bottom: -8px;
+}
 .header .container {
     width: 100%;
     font-size: 16px;
+    font-weight: 600;
 }
 
 .header .inner {
@@ -37,6 +87,10 @@ a {
     border-bottom: 1px solid;
     box-shadow: 2px 5px 2px 1px rgba(0, 0, 0, 0.45);
     background-color: white;
+}
+
+.header-menu__mobile{
+    display: none;
 }
 
 .header-logo {
@@ -102,6 +156,7 @@ a {
 .section-banner {
     background-image: url("../img/bg-banner.png");
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -121,6 +176,7 @@ a {
 
 .banner-left{
     width: 60%;
+    margin: auto;
 }
 .banner-left__info {
     text-align: left;
@@ -143,6 +199,11 @@ a {
     text-align: left;
     margin-top: 58px;
 }
+
+.banner-right{
+    width: 40%;
+}
+
 .label-btn__banner {
     position: relative;
     font-size: 14px;
@@ -184,9 +245,23 @@ a {
     color: white;
     font-size: 18px;
     font-weight: 700;
+    position: relative;
 }
 
-.banner-left__btn_icon {
+.banner-left__btn button::after{
+    position: absolute;
+    background-image: url(../img/right-arrow.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    content: "";
+    width: 25px;
+    height: 25px;
+    right: 20px;
+    top: 11px;
+}
+
+/* .banner-left__btn_icon {
     position: absolute;
     width: 17px;
     height: 17px;
@@ -201,7 +276,7 @@ a {
     height: 14px;
     margin-top: 2px;
     margin-left: 4px;
-}
+} */
 
 .banner-right__img {
     /* width: 490px;
@@ -559,17 +634,35 @@ a {
     background-color: black;
     
     /* -----New------- */
-    margin-right: 20px;
+    /* margin-right: 20px; */
     padding: 16px 0;
+}
+.flow-support-btn .btn__left:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+.flow-support-btn .btn__right:hover{
+    background-color: white;
+    color: #F7293C;
+    border: 2px solid #F7293C;
+} 
+.flow-support-btn .btn__center:hover{
+    background: linear-gradient(to right, rgba(234, 30, 32, 1) 0%, rgba(247, 42, 60, 1) 50%, rgba(255, 69, 55, 1) 100%);
+    color: white;
 }
 
 .flow-support-btn .btn__right {
     background-color: #F7293C;
 
     /* -----New------- */
-    padding: 24px 0;
+    /* padding: 24px 0; */
     margin-left: 26px;
 }
+
+/* .flow-support-btn .btn__right:hover{
+    background-color: #98211b;
+} */
 
 .flow-support-btn .btn__center {
     width: 100%;
@@ -613,9 +706,9 @@ a {
 
 
 /*----------- FAQ------------------ */
-/* .section-faq{
-   
-} */
+.section-faq{
+    padding-bottom: 50px;
+}
 
 .section-faq .container{
     max-width: 1200px;
@@ -646,15 +739,38 @@ a {
     margin-top: 65px;
 }
 
+.list-faq{
+    width: 100%;
+}
+
+
+.faq-item{
+    visibility: hidden;
+    width: 100%;
+    padding: 0px 0;
+    background: #f5c6ca;
+    border-radius: 20px;
+    transition: 0.3s;
+    opacity: 0;
+    margin-bottom: 0;
+}
+.faq-item p{
+    width: 90%;
+    margin: auto;
+}
+.faq-item:hover{
+    padding: 50px 0;
+}
+
 .faq-list-item{
     display: flex;
     background-color: #F7293C;
     border-radius: 40px;
-    margin-bottom: 50px;
     align-items: center;
     color: white;
     justify-content: left;
     padding: 10px 0;
+    cursor: pointer;
 }
 
 .faq-list-item__title{
@@ -750,7 +866,7 @@ a {
 
 #content-language {
     top: -32px;
-    right: 155px;
+    right: 120px;
 }
 
 #content-database {
@@ -968,11 +1084,11 @@ a {
 
 .footer-item li {
     padding: 0px 18px;
-    border-left: 1px solid white;
+    border-right: 1px solid white;
 }
 
-.footer-item__first {
-    border-left: none !important;
+.footer-item li:last-of-type {
+    border-right: none;
 }
 
 .copy_right {

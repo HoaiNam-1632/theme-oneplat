@@ -1,28 +1,35 @@
-<footer class="footer">
+<footer class="footer" style = "background-color:<?php echo get_field('background_color', 'option'); ?>">
         <div class="container">
             <div class="wrapper">
                 <div class="inner">
                     <div class="footer-left">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/logo_white.svg" alt="" srcset="">
+                        <!-- <img src="<?php echo get_template_directory_uri(); ?>/img/logo_white.svg" alt="" srcset=""> -->
+                        <img src="<?php echo get_field('logo_footer', 'option'); ?>" alt="" srcset="">
                     </div>
                     <div class="footer-right">
                         <div class="footer-right__info">
-                            <ul class="footer-item">
-                                <li class="footer-item__first"><a>会社概要</a></li>
-                                <li><a>採用募集要項</a></li>
-                                <li><a>ウェブサイト利用規約</a></li>
-                                <li><a>プライバシーポリシー</a></li>
-                            </ul>
-                            <ul class="footer-item">
-                                <li class="footer-item__first"><a>お問い合わせ</a></li>
-                                <li><a>導入事例・お客様の声</a></li>
-                                <li><a>機能一覧</a></li>
-                            </ul>
-                            <ul class="footer-item">
-                                <li class="footer-item__first"><a>地球環境改善への取り組み</a></li>
-                                <li><a>納品書・請求書クラウドサービスの特徴</a></li>
-                            </ul>
-                            <p class="copy_right">Copyright © 2022 Oneplat All Rights Reserved.</p>
+                           <!-- TOP -->
+                            <?php
+                                wp_nav_menu( array(
+                                    'theme_location' => 'footer-top-menu',
+                                    'menu_class' => 'footer-item',
+                                 ) )
+                            ?>
+                            <!-- MIDDLE -->
+                            <?php
+                                wp_nav_menu( array(
+                                    'theme_location' => 'footer-middle-menu',
+                                    'menu_class' => 'footer-item',
+                                 ) )
+                            ?>
+                            <!-- BOTTOM -->
+                            <?php
+                                wp_nav_menu( array(
+                                    'theme_location' => 'footer-bottom-menu',
+                                    'menu_class' => 'footer-item',
+                                 ) )
+                            ?>
+                            <p class="copy_right"><?php echo get_field('copyright', 'option'); ?></p>
                         </div>
                     </div>
                 </div>
